@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BikeRetal from "../assets/BikeRental.png";
 import GravityTeam from "../assets/Gravity Team.png";
+import SeeProjectBtn from "./SeeProjectBtn";
 
 const projects = [
   {
@@ -10,6 +11,7 @@ const projects = [
     desc: "A responsive bike rental app with booking and authentication.",
     img: BikeRetal,
     ProjectLink: "https://bike-rental-lac-omega.vercel.app/",
+    GithubLink:"https://github.com/amansahu-developer/Bike-Rental-"
   },
   {
     tech: ["#React", "#Tailwind", "#GSAP", "#Vercel"],
@@ -18,6 +20,7 @@ const projects = [
     desc: "A smooth animated landing page inspired by Gravity Team design.",
     img: GravityTeam,
     ProjectLink: "https://gravity-team-psi.vercel.app/",
+    GithubLink:"https://github.com/amansahu-developer/Gravity-Team"
   },
 ];
 
@@ -36,7 +39,10 @@ const Projects = () => {
     <section className="ProjectSection mt-20 px-3 lg:px-10 font-[Urbanist] max-w-[1600px] mx-auto">
       {/* Heading */}
       <div className="Heading p-5 max-w-[750px] lg:max-w-[1500px] mx-auto">
-        <h3 className="text-xl uppercase text-[#fafafaad] pb-5"> Recent projects</h3>
+        <h3 className="text-xl uppercase text-[#fafafaad] pb-5">
+          {" "}
+          Recent projects
+        </h3>
       </div>
 
       {/* SLIDER CONTAINER */}
@@ -74,22 +80,28 @@ const Projects = () => {
                     }}
                   ></h2>
 
-                  <a href={p.ProjectLink} target="_blank">
-                    <button className="cursor-pointer whitespace-nowrap flex justify-center items-center text-lg border w-fit rounded-full py-2 px-6 bg-[#ff3b3b] text-white hover:bg-[#ff3b3b]/85 transition-all duration-200">
-                      See project
-                    </button>
-                  </a>
+                  <div className="Buttons flex gap-4 items-center justify-center md:justify-start ">
+                    <a href={p.ProjectLink} target="_blank">
+                      <SeeProjectBtn name={"See Project"} theme={"red"} />
+                    </a>
+
+                    <a href={p.GithubLink} target="_blank">
+                      <SeeProjectBtn name={"Github Repo"} theme={"white"} />
+                    </a>
+                  </div>
                 </div>
               </div>
 
               {/* RIGHT SECTION */}
               <div className="w-full lg:w-[50%] p-6 flex items-center justify-center py-16 lg:py-0">
                 <div className="h-[250px] sm:h-[350px] md:h-[400px] rounded-xl overflow-hidden">
-                  <a href={p.ProjectLink} target="_blank"><img
-                    src={p.img}
-                    alt="preview"
-                    className="w-full h-full object-cover sm:object-top"
-                  /></a>
+                  <a href={p.ProjectLink} target="_blank">
+                    <img
+                      src={p.img}
+                      alt="preview"
+                      className="w-full h-full object-cover sm:object-top"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
