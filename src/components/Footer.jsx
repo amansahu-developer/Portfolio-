@@ -7,7 +7,7 @@ const SuccessModal = ({ open }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="absolute inset-0 backdrop-blur-2xl"></div>
-      <div className="relative bg-[#1C1D20] text-white p-8 rounded-xl w-[90%] max-w-md animate-fadeIn shadow-xl leading-[30px] py-20">
+      <div className="relative text-white p-8 rounded-xl w-[90%] max-w-md animate-fadeIn shadow-xl leading-[30px] py-20">
         <h2 className="text-xl font-semibold mb-5 text-center">
           Thank you for your interest!
         </h2>
