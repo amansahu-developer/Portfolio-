@@ -67,3 +67,6 @@
 .animate-fadeIn {
   animation: fadeIn 0.25s ease-out;
 }
+textarea::-webkit-scrollbar{
+  display: none;
+}

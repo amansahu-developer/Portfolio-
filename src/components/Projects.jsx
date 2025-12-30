@@ -75,10 +75,13 @@ const Projects = () => {
                     dangerouslySetInnerHTML={{
                       __html: p.desc.replace(
                         p.highlight,
-                        `<span class='text-[#ff3b3b] whitespace-nowrap font-semibold'>${p.highlight}</span>`
+                        `<a href=${p.ProjectLink} target="_blank"><span class='text-[#ff3b3b] whitespace-nowrap font-semibold'>${p.highlight}</span></a>`
+                        
                       ),
                     }}
-                  ></h2>
+                  >
+                    
+                  </h2>
 
                   <div className="Buttons flex gap-4 items-center justify-center md:justify-start ">
                     <a href={p.ProjectLink} target="_blank">
