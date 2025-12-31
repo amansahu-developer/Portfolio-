@@ -6,7 +6,7 @@ import FitnessEvolution from "../assets/FitnessEvolution.png"
 
 const projects = [
   {
-    tech: ["#React", "#Tailwind", "Advance Routing", "#Vercel"],
+    tech: ["#React", "#Tailwind", "#Advance Routing", "#Vercel"],
     title: "Bike Rental App",
     highlight: "Bike rental",
     desc: "A responsive bike rental app with booking and authentication.",
