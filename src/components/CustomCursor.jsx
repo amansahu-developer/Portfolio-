@@ -77,7 +77,7 @@ const CustomCursor = ({ hidden }) => {
   return (
     <div
       className={`fixed pointer-events-none z-[999] transition-opacity duration-300 
-      ${hidden || isIdle ? "opacity-0" : "opacity-100"}`}
+      ${hidden || isIdle ? "opacity-0" : "opacity-100"} hidden xl:block`}
       style={{
         left: pos.x - size / 2,
         top: pos.y - size / 2,

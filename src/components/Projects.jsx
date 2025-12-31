@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import BikeRetal from "../assets/BikeRental.png";
 import GravityTeam from "../assets/Gravity Team.png";
 import SeeProjectBtn from "./SeeProjectBtn";
+import FitnessEvolution from "../assets/FitnessEvolution.png"
 
 const projects = [
   {
-    tech: ["#React", "#Tailwind", "#Firebase Auth", "#Vercel"],
+    tech: ["#React", "#Tailwind", "Advance Routing", "#Vercel"],
     title: "Bike Rental App",
-    highlight: "bike rental",
+    highlight: "Bike rental",
     desc: "A responsive bike rental app with booking and authentication.",
     img: BikeRetal,
     ProjectLink: "https://bike-rental-lac-omega.vercel.app/",
@@ -21,6 +22,15 @@ const projects = [
     img: GravityTeam,
     ProjectLink: "https://gravity-team-psi.vercel.app/",
     GithubLink:"https://github.com/amansahu-developer/Gravity-Team"
+  },
+  {
+    tech: ["#React", "#Tailwind", "Framer Motion", "#Vercel"],
+    title: "Fitness Evolution",
+    highlight: "Fitness Evolution",
+    desc: "A responsive Fitness Evolution Website with Location and Form Integration.",
+    img: FitnessEvolution,
+    ProjectLink: "https://fitness-evolution-roan.vercel.app/",
+    GithubLink:"https://github.com/amansahu-developer/Fitness-Evolution-"
   },
 ];
 
