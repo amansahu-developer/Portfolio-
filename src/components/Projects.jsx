@@ -24,7 +24,7 @@ const projects = [
     GithubLink:"https://github.com/amansahu-developer/Gravity-Team"
   },
   {
-    tech: ["#React", "#Tailwind", "Framer Motion", "#Vercel"],
+    tech: ["#React", "#Tailwind", "#Framer Motion", "#Vercel"],
     title: "Fitness Evolution",
     highlight: "Fitness Evolution",
     desc: "A responsive Fitness Evolution Website with Location and Form Integration.",
